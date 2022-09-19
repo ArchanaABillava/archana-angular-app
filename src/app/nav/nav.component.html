@@ -1,54 +1,69 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <div class="container-fluid" style="background-color:rgb(93, 185, 255)">
       <!--STRING INTERPOLATION-->
       <!--PROPERTY BINDING IN img tag-->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROL_OJbJjOLMDWFfsUVyBlnF9aAWzoHQSOCZNO3jAjinPTRbQkP1ChHlFSSyzPvraf39g&usqp=CAU" alt="amazon"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <!--href - render the entire page-->
             <!--SPA - Partial Rendering - routerLink-->
-            <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="" >Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="cards">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="cards">Available Products</a>
+            <a class="nav-link" routerLink="amazondeals">Deals</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink="register">Register</a>
+          </li> -->
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products Category
+              Category
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Men's wear</a></li>
-              <li><a class="dropdown-item" href="#">Women's Wear </a></li>
-              <li><a class="dropdown-item" href="#">Kids's Wear </a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink="dress">Dress</a></li>
+              <li><a class="dropdown-item" routerLink="fridge">Home Appliances</a></li>
+              <li><a class="dropdown-item" routerLink="washingmachine">Electronic Gadgets</a></li>
+              <li><a class="dropdown-item" routerLink="microoven">Cosmetics</a></li>
+              
+              <!-- <li><hr class="dropdown-divider"></li> -->
               <li><a class="dropdown-item" href="#">Electronic Gadgets</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Happy Shopping</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color:red;">Happy Shopping</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input type="text" #productname placeholder="Enter product name" style="border-radius:10px;">&nbsp;
-          <!--EVENT BINDING-->
-          <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Search</button>
-          <!--Access the Search Component-->
-          <br>
-          <!--Laptop will get assigned to the property product in search component-->
-          <!--@Input(product) in search component-->
-          <!--PROPERTY BINDING-->
-          <!--@Input(product) in search component is going to receive the value from productentered property from nav component-->
-          &nbsp;&nbsp;&nbsp;
-          <app-search [product]="productentered"></app-search>
-        </form>
+        <button style="background-color:rgb(126, 190, 246);border-radius:10px;width: 200px;height: 50px;" routerLink="register">Register</button>
+        
       </div>
+
+      
     </div>
   </nav>
+  <form class="d-flex">
+    <input type="text" #productname placeholder="Enter product name" style="border-radius:10px;">&nbsp;
+    <!--EVENT BINDING-->
+    <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Search</button>
+    
+    <!--Access the Search Component-->
+    <br>
+    <!--Laptop will get assigned to the property product in search component-->
+    <!--@Input(product) in search component-->
+    <!--PROPERTY BINDING-->
+    <!--@Input(product) in search component is going to receive the value from productentered property from nav component-->
+    &nbsp;&nbsp;&nbsp;
+    <app-search [product]="productentered"></app-search>
+  </form>
   <br>
   <br>
    

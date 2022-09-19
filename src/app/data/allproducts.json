@@ -1,0 +1,45 @@
+[
+    {
+        "pid":1,
+        "pname":"Kids Frock",
+        "pdescription":"Kids dress for girls between 4 - 6 years old",
+        "price":750,
+        "img":"https://m.media-amazon.com/images/I/91g-TtHKfkL._UY550_.jpg"
+    },
+    {
+        "pid":2,
+        "pname":"Kids Building Blocks",
+        "pdescription":"Kids toys for age between 4 - 6 years old",
+        "price":1000,
+        "img":"https://5.imimg.com/data5/WA/JR/CH/SELLER-3066843/men-college-formal-shirt-500x500.jpg"
+    },
+    {
+        "pid":3,
+        "pname":"Dell Inspiron 15",
+        "pdescription":"Dell Laptop",
+        "price":45000,
+        "img":"https://th.bing.com/th/id/OIP.w1nfH9XM1EoRpGvSyc-HHQHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":4,
+        "pname":"Jabra Headphones",
+        "pdescription":"Jabra Headphones",
+        "price":3500,
+        "img":"https://th.bing.com/th/id/OIP.6fUrfdYdaP2E2FMAwbmviQHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":5,
+        "pname":"Titan Watch",
+        "pdescription":"Titan watch for girls",
+        "price":1500,
+        "img":"https://static-01.daraz.com.np/p/483739b555784acbee3874e5d9f8ffb0.jpg"
+    },
+    {
+        "pid":6,
+        "pname":"Sony TV",
+        "pdescription":"Sony Bravia LED TV - 65 inch",
+        "price":35000,
+        "img":"https://th.bing.com/th/id/OIP.z35a_DfUQDnaHz2Nh8y7OgHaHa?pid=ImgDet&rs=1"
+    }
+   
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "pid":1,
+        "pname":"Samsung",
+        "pdescription":" Samsung - double door  ",
+        "price":100000,
+        "img":"https://th.bing.com/th/id/OIP.cEq4nA2i692-UiBSIbRf0QHaIq?w=176&h=206&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+        
+    },
+    {
+        "pid":2,
+        "pname":"LG",
+        "pdescription":"LG - 500 litres",
+        "price":18990,
+        "img":"https://th.bing.com/th/id/OIP.HS3xpE6Xi8jUqCL4n0labQHaHa?w=186&h=186&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+    },
+    {
+        "pid":3,
+        "pname":"Whirpool",
+        "pdescription":"Whirlpool - Single Door",
+        "price":11990,
+        "img":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS-jFitvGokxdqqClUXuZNSebA0vg2fnQxLUP31KC-UHfNPACHmiuH13qmJ_t2oJgVRU5nO4xaLZdcuw8UZk9-0jNR9Ay4EPy4TTms2bCQj&usqp=CAE"
+    },
+    {
+        "pid":4,
+        "pname":"Godrej",
+        "pdescription":"Godrej - Double Door",
+        "price":21290,
+        "img":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTg01f1ZxiVCl5P-pvUiZFudHHGzqthqP03JaA3iC5p-YIjms0-88OSFqpNlbB9EloA3GJAJ_0FVGLWZDbZbaB4pXra30Z0ya675xlntrHKA03l8yMgdXljaQ&usqp=CAE"
+    },
+    {
+        "pid":5,
+        "pname":"Croma",
+        "pdescription":"Croma - Double Door Convertible",
+        "price":25999,
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1661170201/Croma%20Assets/Large%20Appliances/Refrigerator/Images/252133_uidwiu.png/mxw_2048,f_auto"
+    },
+    {
+        "pid":6,
+        "pname":"Bosch",
+        "pdescription":"Bosch - 32litres - Triple Door",
+        "price":43490,
+        "img":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTg01f1ZxiVCl5P-pvUiZFudHHGzqthqP03JaA3iC5p-YIjms0-88OSFqpNlbB9EloA3GJAJ_0FVGLWZDbZbaB4pXra30Z0ya675xlntrHKA03l8yMgdXljaQ&usqp=CAE"
+    }
+
+]

@@ -1,3 +1,57 @@
 img {
     height: 500px;
   }
+.stylebinding1{
+  color:red;
+  background-color: beige;
+}
+.stylebinding2{
+  color:rgb(24, 8, 239);
+  background-color: beige;
+}
+
+/*class for retrieving details for ngFor and ngSwitch*/
+.red
+{
+    color:red;
+}
+.green
+{
+    color:green;
+}
+.yellow
+{
+    color: yellow;
+}
+/*Styling using ngClass*/
+.blue
+{
+  color:rgb(255, 0, 204);
+}
+.shadow
+{
+  text-shadow: 3px 2px 2px rgb(97, 253, 118);
+}
+.size
+{
+  font-size: 18px;
+}
+image{
+  height: 100px;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+marquee{
+  text-shadow:2px 3px 3px rgba(251, 226, 3, 0.724);
+  color:rgb(4, 4, 4);
+  font-size: 28px;
+}
+.description
+{
+  color:blue;
+  font-size: 14px;
+}
+
+

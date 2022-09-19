@@ -1,0 +1,42 @@
+<marquee>Lighting deals are here</marquee>
+<div *ngFor="let f of fridge" style="border-style:none;">
+    <div class="row" >
+        <!--1st col-->
+        <div class="col col-lg-3">
+                <img [src]="f.img">
+        </div>
+<!--2st col-->
+        <div class="col col-lg-6">
+        <div class="card col-lg-12">
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;">
+                    <div class="card col-lg-4">
+                        <!--Property binding-->
+                        <img [src]="f.img">
+
+                    </div>
+                    <div class="card col-lg-7">
+                        <!--Interpolation bindin-->
+                        <div>
+                            {{f.pname | uppercase}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                            <hr>
+                        <div [hidden]="ProductDetail">
+                            {{f.pdescription}}
+                            <br>
+                            {{f.price | currency:'INR'}}
+                            <br>
+                            <app-counter></app-counter>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="col col-lg-3">
+        <img [src]="f.img">
+    </div>
+    </div>
+</div>

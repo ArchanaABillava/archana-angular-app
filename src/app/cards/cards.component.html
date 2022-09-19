@@ -1,3 +1,46 @@
+<!--Fetch all the records from product property in the .ts file which is accessing the product.json-->
+<!-- <marquee>Top selling products with offers</marquee>
+<hr>
+<div class="row">
+    <app-allproducts></app-allproducts>
+</div>
+<div *ngFor="let prod of product" style="border-style:none;">
+    <div class="row" >
+        <!--1st col-->
+        <!-- <div class="col col-lg-3">
+                <img [src]="prod.img">
+        </div> -->
+<!--2st col-->
+        <!-- <div class="col col-lg-6">
+        <div class="card col-lg-12">
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;">
+                    <div class="card col-lg-3">
+                        <!--Property binding-->
+                        <!-- <img [src]="prod.img">
+
+                    </div>
+                    <div class="card col-lg-9"style="margin-top:10px;"> -->
+                        <!--Interpolation bindin-->
+                        <!-- <div>
+                            {{prod.pname | uppercase}}
+                            <br>
+                            {{prod.pdescription}}
+                            <br>
+                            {{prod.price | currency:'INR'}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+    <!-- </div>
+    <div class="col col-lg-3">
+        <img [src]="prod.img">
+    </div>
+    </div>
+</div>  -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -103,48 +146,49 @@
         </style>
     </head>
     <body>
+        
         <h1>PRODUCTS AVAILABLE</h1>
   
         <section class="items">
             <div class="item">
                 <img src="https://c.ndtvimg.com/gws/5024/assets/28.jpeg?1645187308">
                 <h4>Womens Dress</h4>
-                <!-- <button>Price:120/-</button> -->
+            <button style="background-color:aquamarine;color:black;">Buy Now</button> 
             </div>
             <div class="item">
                 <img src="https://thumbs.dreamstime.com/b/fashion-clothes-short-sleeve-shirt-pants-men-photo-white-background-149184999.jpg">
                 <h4>Mens wear</h4>
-                <!-- <button>Price:80/-</button> -->
+                <button style="background-color:aquamarine;color:black;">Buy Now</button>
             </div>
             <div class="item">
                 <img src="https://5.imimg.com/data5/FP/OC/WC/SELLER-12167522/cosmetics-product-500x500.jpg">
                 <h4>Cosmetics</h4>
-                <!-- <button>Price:60/-</button> -->
+                 <button style="background-color:aquamarine;color:black;">Buy Now</button>
             </div>
             <div class="item">
                 <img src="https://media.istockphoto.com/photos/set-of-kitchen-home-appliances-toaster-kettle-mixer-blender-yogurt-picture-id691988470?k=20&m=691988470&s=612x612&w=0&h=ScZdmNlLlwUoiDJOcDAwxbqYHYCeccRJzDhZShx6ZCI=">
                 <h4>Kitchen  Appliances</h4>
-                <!-- <button>Price:70/-</button> -->
+                 <button style="background-color:aquamarine;color:black;">Buy Now</button>
             </div>
             <div class="item">
                 <img src="https://t3.ftcdn.net/jpg/02/35/84/44/360_F_235844454_RTTLpnm2asRdwNJ97MU0ENJqnCSUdXQv.jpg">
                 <h4>Electronic Gadgets</h4>
-                <!-- <button>Price:70/-</button> -->
+                <button style="background-color:aquamarine;color:black;">Buy Now</button> 
             </div>
             <div class="item">
                 <img src="https://n3.sdlcdn.com/imgs/h/5/k/ALL-ABOUT-PINKS-reg-Party-SDL146836514-1-c5e5a.jpg">
                 <h4>Kids Wear</h4>
-                <!-- <button>Price:90/-</button> -->
+                <button style="background-color:aquamarine;color:black;">Buy Now</button> 
             </div>
             <div class="item">
                 <img src="https://img.freepik.com/premium-photo/baby-educational-toys-kid-play-colorful-wooden-toys-white-background-children-education-7-month_369656-2504.jpg?w=2000">
                 <h4>Toys</h4>
-                <!-- <button>Price:150/-</button> -->
+                 <button style="background-color:aquamarine;color:black;">Buy Now</button> 
             </div>
             <div class="item">
                 <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX3904322.jpg">
                 <h4>Jewellery</h4>
-                <!-- <button>Price:40/-</button> -->
+               <button style="background-color:aquamarine;color:black;">Buy Now</button> 
             </div>
         </section>
     </body>

@@ -1,0 +1,201 @@
+<!--Assisgment Task-7-->
+<!--Cards-->
+<hr>
+<marquee>!!! SPECIAL OFFERS !!! </marquee>
+<h2 style="text-align:center;color:brown;font-size:28px;">WOMEN'S WEARS</h2>
+
+<div  style="border-style:none;">
+    <div class="row" >
+        <!--1st col-->
+        <div class="col col-lg-4" *ngFor="let prod of productdetails1" [ngSwitch]="prod.Status" >
+          <div class="card col-lg-12" >
+              <div class="card-body col-lg-12" >
+                  <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;padding:4px;">
+                      <div class="card col-lg-4" >
+                          <!--Property binding-->
+                          <img [src]="prod.image" style="width:100px;height:200px">
+  
+                      </div>
+                      <div class="card col-lg-8">
+                          <!--Interpolation bindin-->
+                          <div style="color:red;font-size: 18px;">
+                              {{prod.pname | uppercase}}
+                            <div class="description" style="color:darkblue;font-size: 18px;">
+                              {{prod.pdescription}}
+                              <br>
+                              {{prod.price | currency:'INR'}}
+                              <br>
+                              <app-counter></app-counter>
+                            </div>
+                              
+                              
+                          </div>
+                          <button  style="font-size:large;text-align:center;background-color:bisque;border-radius: 25px;width:150px;height:40px;margin-top:5px;">Buy</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+<!--2st col-->
+        <div class="col col-lg-4" *ngFor="let prod of productdetails2" [ngSwitch]="prod.Status">
+        <div class="card col-lg-12">
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;">
+                    <div class="card col-lg-4">
+                        <!--Property binding-->
+                        <img [src]="prod.image" style="width:100px;height:200px">
+
+                    </div>
+                    <div class="card col-lg-8">
+                        <!--Interpolation bindin-->
+                        <div style="color:rgb(14, 87, 36);font-size: 18px;">
+                            {{prod.pname | uppercase}}
+                        </div>
+                        <div class="description">
+                            {{prod.pdescription}}
+                            <br>
+                            {{prod.price | currency:'INR'}}
+                            <br>
+                              <app-counter></app-counter>
+                            
+                        </div>
+                        <button  style="font-size:large;text-align:center;background-color:bisque;border-radius: 25px;width:150px;height:40px;margin-top: 5px;">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!--3rd col-->
+    <div class="col col-lg-4" *ngFor="let prod of productdetails3" [ngSwitch]="prod.Status">
+      <div class="card col-lg-12">
+          <div class="card-body col-lg-12">
+              <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;">
+                  <div class="card col-lg-4">
+                      <!--Property binding-->
+                      <img [src]="prod.image" style="width:100px;height:200px;padding-left:2px;">
+
+                  </div>
+                  <div class="card col-lg-8">
+                      <!--Interpolation bindin-->
+                      <div style="color:rgb(15, 238, 250);font-size: 18px;">
+                          {{prod.pname | uppercase}}
+                      </div>
+                      <div class="description">
+                          {{prod.pdescription}}
+                          <br>
+                          {{prod.price | currency:'INR'}}
+                          <br>
+                              <app-counter></app-counter>
+                      </div>
+                      <button  style="font-size:large;text-align:center;background-color:bisque;border-radius: 25px;width:150px;height:40px;margin-top: 5px;">Buy</button>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+     
+  </div>
+    </div>
+</div>
+<br>
+<br>
+<h2 style="text-align:center;color:brown;font-size:28px;">MEN'S WEARS</h2>
+<br>
+<br>
+<div  style="border-style:none;">
+    <div class="row" >
+        <!--1st col-->
+        <div class="col col-lg-4" *ngFor="let prod of productdetails4" [ngSwitch]="prod.Status">
+          <div class="card col-lg-12">
+              <div class="card-body col-lg-12">
+                  <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;padding:4px;">
+                      <div class="card col-lg-4">
+                          <!--Property binding-->
+                          <img [src]="prod.image" style="width:100px;height:200px">
+  
+                      </div>
+                      <div class="card col-lg-8">
+                          <!--Interpolation bindin-->
+                          <div style="color:red;font-size: 18px;">
+                              {{prod.pname | uppercase}}
+                            <div class="description" style="color:darkblue;font-size: 18px;">
+                              {{prod.pdescription}}
+                              <br>
+                              {{prod.price | currency:'INR'}}
+                              <br>
+                              <app-counter></app-counter>
+                            </div>
+                              
+                              
+                          </div>
+                          <button  style="font-size:large;text-align:center;background-color:bisque;border-radius: 25px;width:150px;height:40px;margin-bottom: 10px;">Buy</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+<!--2st col-->
+        <div class="col col-lg-4" *ngFor="let prod of productdetails5" [ngSwitch]="prod.Status">
+        <div class="card col-lg-12">
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;">
+                    <div class="card col-lg-4">
+                        <!--Property binding-->
+                        <img [src]="prod.image" style="width:100px;height:200px">
+
+                    </div>
+                    <div class="card col-lg-8">
+                        <!--Interpolation bindin-->
+                        <div style="color:rgb(14, 87, 36);font-size: 18px;">
+                            {{prod.pname | uppercase}}
+                        </div>
+                        <div class="description">
+                            {{prod.pdescription}}
+                            <br>
+                            {{prod.price | currency:'INR'}}
+                            <br>
+                              <app-counter></app-counter>
+                            
+                        </div>
+                        <button  style="font-size:large;text-align:center;background-color:bisque;border-radius: 25px;width:150px;height:40px;margin-top: 20px;">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!--3rd col-->
+    <div class="col col-lg-4" *ngFor="let prod of productdetails6" [ngSwitch]="prod.Status">
+      <div class="card col-lg-12">
+          <div class="card-body col-lg-12">
+              <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;">
+                  <div class="card col-lg-4">
+                      <!--Property binding-->
+                      <img [src]="prod.image" style="width:100px;height:200px;padding-left:2px;">
+
+                  </div>
+                  <div class="card col-lg-8">
+                      <!--Interpolation bindin-->
+                      <div style="color:rgb(15, 238, 250);font-size: 18px;">
+                          {{prod.pname | uppercase}}
+                      </div>
+                      <div class="description">
+                          {{prod.pdescription}}
+                          <br>
+                          {{prod.price | currency:'INR'}}
+                          <br>
+                              <app-counter></app-counter>
+                      </div>
+                      <button  style="font-size:large;text-align:center;background-color:bisque;border-radius: 25px;width:150px;height:40px;margin-top: 50px;">Buy</button>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+     
+  </div>
+    </div>
+</div>

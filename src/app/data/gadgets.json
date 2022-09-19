@@ -1,0 +1,51 @@
+[
+    {
+        "pid":1,
+        "pname":"Kids Frock",
+        "pdescription":"Kids dress for girls between 4 - 6 years old",
+        "price":750,
+        "img":"https://th.bing.com/th/id/OIP.p9mcy1s4fqQiU1wJczY7fAHaHK?w=186&h=179&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+    },
+    {
+        "pid":2,
+        "pname":"Kids Building Blocks",
+        "pdescription":"Kids toys for age between 4 - 6 years old",
+        "price":1000,
+        "img":"https://th.bing.com/th/id/OIP.Gd6ov_glKB2t4KzG4vYWbwHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":3,
+        "pname":"Dell Inspiron 15",
+        "pdescription":"Dell Laptop",
+        "price":45000,
+        "img":"https://th.bing.com/th/id/OIP.w1nfH9XM1EoRpGvSyc-HHQHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":4,
+        "pname":"Jabra Headphones",
+        "pdescription":"Jabra Headphones",
+        "price":3500,
+        "img":"https://th.bing.com/th/id/OIP.6fUrfdYdaP2E2FMAwbmviQHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":5,
+        "pname":"Titan Watch",
+        "pdescription":"Titan watch for girls",
+        "price":1500,
+        "img":"https://static-01.daraz.com.np/p/483739b555784acbee3874e5d9f8ffb0.jpg"
+    },
+    {
+        "pid":6,
+        "pname":"Sony TV",
+        "pdescription":"Sony Bravia LED TV - 65 inch",
+        "price":35000,
+        "img":"https://th.bing.com/th/id/OIP.z35a_DfUQDnaHz2Nh8y7OgHaHa?pid=ImgDet&rs=1"
+    },
+    {
+        "pid":7,
+        "pname":"Samsung",
+        "pdescription":"Samsung - double door ",
+        "price":100000,
+        "img":"https://th.bing.com/th/id/OIP.cEq4nA2i692-UiBSIbRf0QHaIq?w=176&h=206&c=7&r=0&o=5&dpr=1.25&pid=1.7"
+    }
+]

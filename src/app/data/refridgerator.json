@@ -1,0 +1,46 @@
+[
+    {
+        "pid":1,
+        "pname":"Prestige Induction",
+        "pdescription":"Prestige PIC 20 1600 Watt Induction Cooktop with push button ",
+        "price":2077,
+        "img":"https://www.compareprix.in/images/product/large/prestige-pic-16-0-induction-cooktoplarge.jpg"
+        
+    },
+    {
+        "pid":2,
+        "pname":"Electric Kettle",
+        "pdescription":"Electric kettle with stainless steel body,1.5 Litre capacity",
+        "price":790,
+        "img":"https://rukminim1.flixcart.com/image/612/612/knt7zbk0/electric-kettle/5/g/j/atlas-1-8l-stainless-steel-electric-kettle-atlas-1-8-pkoss-1-8-original-imag2egygrbg2jq4.jpeg?q=70"
+    },
+    {
+        "pid":3,
+        "pname":"Air Fryer",
+        "pdescription":"Air Fryer  uses up to 90% less fat ,1400W ,4.1 Litre with rapid Air Technology",
+        "price":5599,
+        "img":"https://m.media-amazon.com/images/I/614TSm1LckL._AC_SS450_.jpg"
+    },
+    {
+        "pid":4,
+        "pname":"Vaccum Cleaner",
+        "pdescription":"Inalsa Vacuum Cleaner Gusto Pro-1200W with powerful Blower Function",
+        "price":4779,
+        "img":"https://media.istockphoto.com/photos/vacuum-cleaner-isolated-on-white-background-picture-id927031764?k=20&m=927031764&s=612x612&w=0&h=qOj8SoWcD62Zal8ab3pbd2WOsnmzzh7yS9VRNJCCoXg="
+    },
+    {
+        "pid":5,
+        "pname":"Water Purifier",
+        "pdescription":"Livpure GLO PRO++RO+UV+UF+Smart TDS Adjuster water purifier for home -7L Storage",
+        "price":9999,
+        "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1651665632/Croma%20Assets/Small%20Appliances/Water%20Purifier/Images/250627_kjmn2o.png/mxw_640,f_auto"
+    },
+    {
+        "pid":6,
+        "pname":"Washing Machine",
+        "pdescription":"Bosch - 32litres - Triple Door",
+        "price":43490,
+        "img":"https://www.lg.com/in/images/washing-machines/md07518535/gallery/FHV1408ZWB-Washing-Machines-Left-View-Open-D-07.jpg"
+    }
+
+]

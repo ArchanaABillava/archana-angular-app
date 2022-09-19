@@ -1,0 +1,11 @@
+Directives
+------------
+Loop-->array -->for
+Condition-->if,switch
+
+-------------------------
+----15-09----
+Nested component
+------------
+ng g c washining-machine
+ng g c washining-machine/washing-machinedeals

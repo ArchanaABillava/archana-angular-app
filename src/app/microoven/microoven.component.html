@@ -1,0 +1,93 @@
+<!-- <marquee>Micro Oven deals in amazon</marquee>
+
+<div style="margin-top: 30px;">
+    <div class="row">
+        <!--1st column-->
+        <!-- <div class="col col-lg-3">
+            <app-allproducts></app-allproducts> -->
+            <!-- <app-allproducts></app-allproducts> -->
+        <!-- </div> -->
+
+        <!--2nd column-->
+        <!-- <div class="card col-lg-6" style="border:none;margin-top: 30px;">
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;"
+                    *ngFor="let m of micro">
+                    <div class="col-lg-3">
+                        <!--Property Binding-->
+                        <!-- <img [src]="m.img">
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+                        <!--Interpolation Binding-->
+                        <!-- <div>
+                            Product: {{ m.pname | uppercase}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetail">
+                            Description: {{m.pdescription}}
+                            <br>
+                            Price: {{ m.price | currency:'INR'}}
+                            <br>
+                            <app-counter></app-counter>
+                        </div> -->
+                    <!-- </div>
+                </div>
+            </div>
+        </div> -->
+        <!--3rd column-->
+        <!-- <div class="row" *ngFor="let m of micro"> -->
+            <!--Property Binding-->
+            <!-- <img [src]="m.img">
+        </div>
+        
+    </div>
+    
+</div> -->
+
+
+
+
+
+<div  style="border-style:none;">
+    <div class="row" >
+        <!--1st col-->
+        <div class="col col-lg-4" *ngFor="let m of micro">
+          <div class="card col-lg-12">
+              <div class="card-body col-lg-12">
+                  <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;padding:4px;">
+                      <div class="card col-lg-4">
+                          <!--Property binding-->
+                          <img [src]="m.img" style="width:100px;height:200px">
+  
+                      </div>
+                      <div class="card col-lg-8">
+                          <!--Interpolation bindin-->
+                          <div style="color:red;font-size: 18px;">
+                              {{m.pname | uppercase}}
+                            <div class="description" style="color:darkblue;font-size: 18px;">
+                              {{m.pdescription}}
+                              <br>
+                              {{m.price | currency:'INR'}}
+                            </div>
+                              
+                              
+                          </div>
+                          <app-counter></app-counter>
+                          <button style="background-color:beige;border-radius: 18px;height:40px;width: 200px;">Buy</button>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+<!--2st col-->
+        <div class="col col-lg-4">
+        </div>
+<!--3rd col-->
+    <div class="col col-lg-4">
+    </div>   
+
+    </div>
+</div>

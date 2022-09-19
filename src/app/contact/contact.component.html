@@ -1,0 +1,43 @@
+<div  style="border-style:none;">
+    <div class="row" >
+        <!--1st col-->
+        <div class="col col-lg-4" *ngFor="let c of cont">
+          <div class="card col-lg-12">
+              <div class="card-body col-lg-12">
+                  <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:5px;padding:4px;">
+                      <div class="card col-lg-4">
+                          <!--Property binding-->
+                          <img [src]="c.img" style="width:100px;height:200px">
+  
+                      </div>
+                      <div class="card col-lg-8">
+                          <!--Interpolation bindin-->
+                          <div style="color:red;font-size: 18px;">
+                              {{c.cname | uppercase}}
+                            <div class="description" style="color:darkblue;font-size: 18px;">
+                              {{c.cdescription}}
+                              <br>
+                              {{c.caddress }}
+                              <br>
+                              {{c.cphone}}
+                              <br>
+                            </div>
+                              
+                              
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+<!--2st col-->
+        <div class="col col-lg-4">
+        </div>
+<!--3rd col-->
+    <div class="col col-lg-4">
+    </div>   
+
+    </div>
+</div>

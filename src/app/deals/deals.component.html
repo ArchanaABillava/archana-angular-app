@@ -1,0 +1,29 @@
+<div class="card-body col-lg-12">
+    <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;background-color: rgb(143, 179, 247);">
+        <div class="col-lg-3">
+            <!--Property Binding-->
+            <img [src]="product.img">
+        </div>
+        <div class="col-lg-9" style="margin-top:20px;">
+            <!--Interpolation Binding-->
+            <div>
+                <div style="color:blue;font-size:18px;">
+                    {{product.pname | uppercase}}
+                    <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                </div>
+                
+            </div>
+            <hr>
+            <div [hidden]="productDetail">
+                <div style="color:rgb(248, 12, 12);font-size:16px;">
+                    Description: {{product.pdescription}}
+                </div>
+               
+               
+                Price: {{product.price | currency:'INR'}}
+                <br>
+                <!-- <app-counter></app-counter> -->
+                <button style="background-color: rgb(158, 158, 253);margin-bottom:10px;border-radius:8px;margin-top: 10px;">Buy Now</button>
+            </div>
+        </div>
+    </div>
