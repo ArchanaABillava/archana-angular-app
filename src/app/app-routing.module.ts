@@ -10,7 +10,7 @@ import { WashingmachineComponent } from './washingmachine/washingmachine.compone
 import { AmazondealsComponent } from './deals/amazondeals/amazondeals.component';
 import { MicroovenComponent } from './microoven/microoven.component';
 import { DressComponent } from './dress/dress.component';
-
+import { ContactComponent } from './contact/contact.component';
 
 
 //Configure the routing path for the above imported components
@@ -23,7 +23,8 @@ const routes: Routes = [
   {path:'amazondeals',component:AmazondealsComponent},
   {path:'microoven',component:MicroovenComponent},
   {path:'dress',component:DressComponent},
-  {path:'register',component:RegisterComponent}
+  {path:'register',component:RegisterComponent},
+  {path:'contact',component:ContactComponent}
 
 ];
 
