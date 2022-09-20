@@ -1,1 +1,22 @@
-<p>login works!</p>
+<app-home></app-home>
+<div class="container">
+    <h4>LOGIN</h4>
+    <form class="login-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label class="text-uppercase">Email</label>
+            <input type="text" class="form-control" formControlName="email" />
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" formControlName="password" />
+        </div>
+        <button type="submit" class="btn btn-primary mt-2 float-right">
+            Login
+        </button>
+    </form>
+    <div class="alert alert-danger" *ngIf="isSubmitted && !isValidUser">
+        <strong>Wrong authentication!</strong>
+        Please enter valid authentication
+    </div>
+</div>

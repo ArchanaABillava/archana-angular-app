@@ -25,6 +25,7 @@ import { DressComponent } from './dress/dress.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductDetailsComponent } from './productdetails/product-details.component';
 
 
 
@@ -51,6 +52,7 @@ import { ContactComponent } from './contact/contact.component';
     LoginComponent,
     RegisterComponent,
     ContactComponent,
+    ProductDetailsComponent,
     
     
     

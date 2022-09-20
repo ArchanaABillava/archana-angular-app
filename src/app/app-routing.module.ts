@@ -11,6 +11,7 @@ import { AmazondealsComponent } from './deals/amazondeals/amazondeals.component'
 import { MicroovenComponent } from './microoven/microoven.component';
 import { DressComponent } from './dress/dress.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductDetailsComponent } from './productdetails/product-details.component';
 
 
 //Configure the routing path for the above imported components
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:'microoven',component:MicroovenComponent},
   {path:'dress',component:DressComponent},
   {path:'register',component:RegisterComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'productDetails',component:ProductDetailsComponent}
 
 ];
 

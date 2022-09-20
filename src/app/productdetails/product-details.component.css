@@ -1,8 +1,9 @@
-img{
-    height:100px;
-    width:100px;
-    margin-left:20px;
+.prodimg{
+    height:40px;
+    width:40px;
+    margin-left:100px;
     margin-top:10px;
     margin-bottom:10px;
     border-radius:10px;
+
 }

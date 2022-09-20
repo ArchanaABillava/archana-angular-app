@@ -18,38 +18,38 @@ export class MicroovenService {
     },
     {
       pid:2,
-      pname:'Samsung',
-      pdescription:'',
-      price:5500,
-      img:'https://www.lg.com/in/images/microwave-ovens/md05265262/gallery/MC3286BRUM-microwave-ovens-Front-view-D-01.jpg'
+      pname:'Nivea Moisturiser',
+      pdescription:'Nivea Soft Light Moisturiser Cream  keeps you feeling fresh',
+      price:399,
+      img:'https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/lr7iip9pdwlpajbbbof7.jpg'
     },
     {
       pid:3,
-      pname:'Samsung',
-      pdescription:'',
-      price:5500,
-      img:'https://www.lg.com/in/images/microwave-ovens/md05265262/gallery/MC3286BRUM-microwave-ovens-Front-view-D-01.jpg'
+      pname:'Perfume',
+      pdescription:'Premium Long Lasting Fragrance Spray -highest selling brand  in India.  ',
+      price:1999,
+      img:'https://media.allure.com/photos/614351d3934fb87214166c42/1:1/w_1196,h_1196,c_limit/Yves%20Saint%20Laurent%20Mon%20Paris.jpeg'
     },
     {
       pid:4,
-      pname:'Samsung',
-      pdescription:'',
-      price:5500,
-      img:'https://www.lg.com/in/images/microwave-ovens/md05265262/gallery/MC3286BRUM-microwave-ovens-Front-view-D-01.jpg'
+      pname:'Lipstick',
+      pdescription:'Best Red Lipstick Shades for 2022 - Iconic Red Lip Colors -long lasting',
+      price:990,
+      img:'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1594998689-2511153-1594998673.jpg?crop=0.6666666666666667xw:1xh;center,top&resize=480:*'
     },
     {
       pid:5,
-      pname:'Samsung',
-      pdescription:'',
-      price:5500,
-      img:'https://www.lg.com/in/images/microwave-ovens/md05265262/gallery/MC3286BRUM-microwave-ovens-Front-view-D-01.jpg'
+      pname:'Compact Powder',
+      pdescription:'Maybelline New York Compact Powder, With SPF to Protect Skin from Sun',
+      price:599,
+      img:'https://m.media-amazon.com/images/I/51wfOpdqHyL._SY355_.jpg'
     },
     {
       pid:6,
-      pname:'Samsung',
-      pdescription:'',
-      price:5500,
-      img:'https://www.lg.com/in/images/microwave-ovens/md05265262/gallery/MC3286BRUM-microwave-ovens-Front-view-D-01.jpg'
+      pname:'Eyeliner',
+      pdescription:'Be it rain or trouble , a waterproof eyeliner will always be with you! ',
+      price:790,
+      img:'https://cdn.shopify.com/s/files/1/0602/3158/1920/products/precision_waterproof_eyeliner_1_22eca24b-42e5-4a02-9bdc-037ef28fded2.jpg?v=1654046545'
     }
   ]
 

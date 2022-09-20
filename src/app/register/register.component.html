@@ -1,9 +1,12 @@
+
+
+
 <!--Property Binding-->
-<form [formGroup]="myForm" novalidate>
+<form [formGroup]="myForm" novalidate  style="background-image:url('https://wallpaperaccess.com/full/2314983.jpg');width:600px;height:350px;">
     <div class="form-group">
-        <label>User Name</label>
+        <label style="color:rgb(248, 25, 9);border-radius:8px;">User Name</label>
         <input type="text" class="form-control" placeholder="Enter username" formControlName="username"
-            [ngClass]="{'is-invalid':username.errors && (username.touched||username.dirty),'is-valid':username.valid}">
+            [ngClass]="{'is-invalid':username.errors && (username.touched||username.dirty),'is-valid':username.valid}"  style="border-style:solid;border-color:rgb(20, 19, 19);border-radius:5px;width: 200px;background-color: rgba(224, 244, 207, 0);" >
         <!--Error message for username-->
         <span class="invalid-feedback">
             <strong *ngIf="username.errors?.required">Name is Required</strong>
@@ -65,4 +68,4 @@
 <div>
     <h3>User Details</h3>
     <pre>{{myForm.value | json}}</pre>
-</div>
+</div> 
