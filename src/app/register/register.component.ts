@@ -48,6 +48,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
+import { error } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-register',
@@ -69,10 +70,10 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
-      username: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
-      useremail: ['', Validators.required],
-      password: ['', Validators.required, Validators.pattern('[A-Za-z0-9]*'), Validators.minLength(6), Validators.maxLength(14)],
-      mobile: ['', Validators.required, Validators.pattern('[0-9]*')]
+      uername: ['', Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)],
+      useremail: ['', [Validators.required, Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      mobile: ['', Validators.required, Validators.pattern('[0-9]*'),Validators.minLength(10)]
     });
   }
   get f() { return this.registerForm.controls; }

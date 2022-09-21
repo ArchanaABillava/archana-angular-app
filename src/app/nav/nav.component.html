@@ -15,17 +15,17 @@
             <a class="nav-link active" aria-current="page" routerLink="" >Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="register" >Login/Register</a>
+            <a class="nav-link" routerLink="register" *ngIf="!auth">Login/Register</a>
           </li>
           
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" routerLink="cards" >Products</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="amazondeals" *ngIf="auth" >Deals</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="amazondeals" >Deals</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="products" >Product Details</a>
+            <a class="nav-link" routerLink="products" *ngIf="auth">Product Details</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" routerLink="register">Register</a>

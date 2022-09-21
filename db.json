@@ -1,13 +1,6 @@
 {
   "posts": [
     {
-      "id": 3,
-      "pname": "Dell Inspiron 15",
-      "pdescription": "Dell Laptop",
-      "price": "43999",
-      "img": "https://th.bing.com/th/id/OIP.w1nfH9XM1EoRpGvSyc-HHQHaHa?pid=ImgDet&rs=1"
-    },
-    {
       "id": 4,
       "pname": "Jabra Headphones",
       "pdescription": "Jabra Headphones",
@@ -15,11 +8,7 @@
       "img": "https://th.bing.com/th/id/OIP.6fUrfdYdaP2E2FMAwbmviQHaHa?pid=ImgDet&rs=1"
     },
     {
-      "id": 5,
-      "pname": "Titan Watch",
-      "pdescription": "Titan watch for girls",
-      "price": 1500,
-      "img": "https://static-01.daraz.com.np/p/483739b555784acbee3874e5d9f8ffb0.jpg"
+      "id": 5
     },
     {
       "id": 6,
@@ -50,11 +39,7 @@
       "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS-jFitvGokxdqqClUXuZNSebA0vg2fnQxLUP31KC-UHfNPACHmiuH13qmJ_t2oJgVRU5nO4xaLZdcuw8UZk9-0jNR9Ay4EPy4TTms2bCQj&usqp=CAE"
     },
     {
-      "id": 10,
-      "pname": "Godrej",
-      "pdescription": "Godrej - Double Door",
-      "price": 21290,
-      "img": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTg01f1ZxiVCl5P-pvUiZFudHHGzqthqP03JaA3iC5p-YIjms0-88OSFqpNlbB9EloA3GJAJ_0FVGLWZDbZbaB4pXra30Z0ya675xlntrHKA03l8yMgdXljaQ&usqp=CAE"
+      "id": 10
     },
     {
       "id": 11,
@@ -78,11 +63,7 @@
       "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTfIENDuauv7ZFXGNRSQuVdIdyef-AJQ-tHSP4P5ahKNe7_eDc7WXcITgD0kXRnlbdHpBFSnKfeETvTuKUzMCURW_Ln2WvoUnPXoqw70I8&usqp=CAE"
     },
     {
-      "id": 14,
-      "pname": "LG",
-      "pdescription": "LG - Automatic",
-      "price": 18990,
-      "img": "https://mlvtgiqzoszz.i.optimole.com/Sb3K8mU-Band6g6L/w:auto/h:auto/q:90/https://www.appliancecity.co.uk/wp-content/uploads/2017/09/LG-fh495bdn8-washer-1.jpg"
+      "id": 14
     },
     {
       "id": 15,
@@ -118,6 +99,18 @@
       "pdescription": "Kids frock for age between 4 to 6yrs old",
       "price": "950",
       "img": "https://i.pinimg.com/originals/45/0f/9a/450f9a23a44d8527da05377795006fa2.jpg"
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
     }
   ],
   "users": [
@@ -136,12 +129,25 @@
       "mobile": "745637826"
     },
     {
-      "id": 3,
-      "username": "Archana ",
-      "useremail": "aabillava@gmail.com",
-      "password": "aab@06",
-      "mobile": "9876543210"
-      
+      "username": "Peter",
+      "useremail": "peter@gmail.com",
+      "password": "peter18",
+      "mobile": "",
+      "id": 3
+    },
+    {
+      "username": "Jyoth",
+      "useremail": "jyothi@gmail.com",
+      "password": "jyothi12",
+      "mobile": "9686905016",
+      "id": 4
+    },
+    {
+      "uername": "",
+      "useremail": "jyothi@gmail.com",
+      "password": "jyo",
+      "mobile": "9686905016",
+      "id": 5
     }
   ],
   "profile": {

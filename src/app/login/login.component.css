@@ -18,13 +18,15 @@ form {
     width: 40%;
     border-style: inset;
     border-radius: 10px;
-    border-color: black;
-    box-shadow: 2px 3px 4px yellow;
+    border-color: rgb(17, 6, 87);
+    box-shadow: 2px 3px 4px rgb(30, 0, 255);
 }
 
 form:hover {
-    color: rgb(174, 155, 11);
-    background-color: rgb(40, 40, 40);
+    color: rgb(39, 16, 248);
+    background-color: rgb(78, 157, 237);
+   
+    background-image: ('');
     transform:scale(1.2);
 
 }
@@ -36,4 +38,4 @@ button {
 span {
     width: 60%;
     margin-left: 100px;
-}
+} 

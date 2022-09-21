@@ -4,7 +4,7 @@ input {
 }
 
 label {
-    color:red;
+    color:rgb(2, 2, 34);
     margin-left: 100px;
 }
 
@@ -14,14 +14,14 @@ form {
     width: 40%;
     border-style: inset;
     border-radius: 10px;
-    border-color: black;
-    box-shadow: 2px 3px 4px rgb(255, 0, 0);
+    border-color: rgb(17, 29, 74);
+    box-shadow: 2px 3px 4px rgb(0, 38, 255);
 }
 
 form:hover {
-    color: rgb(174, 11, 11);
-    background-color: rgb(40, 40, 40);
-    transform:scale(1.2);
+    color: rgb(19, 8, 51);
+    background-color: rgb(63, 66, 245);
+    transform:scale(1.1);
 
 }
 

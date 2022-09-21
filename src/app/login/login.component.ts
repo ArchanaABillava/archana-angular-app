@@ -51,6 +51,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { UserService } from '../user.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -61,7 +62,8 @@ public loginForm!:FormGroup
 //Authenticate user details from userapi
 userapi=environment.userapi;
 
-submitted = false;
+submitted=false;
+
 get f() { return this.loginForm.controls; }
 //constructor injection
   constructor(private formBuilder:FormBuilder,private http:HttpClient,private router:Router,
@@ -87,7 +89,7 @@ get f() { return this.loginForm.controls; }
       if(user){
         alert("login successful!!");
         this.loginForm.reset();
-        this.router.navigate(['home'])
+        this.router.navigate([''])
         this.userService.validateAuth(true);
       }else{
         alert("user not found !!");       

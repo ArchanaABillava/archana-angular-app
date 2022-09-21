@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../user.service';
+import {UserService} from '../user.service';
+// import { UserService } from '../user.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -7,7 +8,7 @@ import { UserService } from '../user.service';
 })
 export class NavComponent implements OnInit {
    //Dependency injection
-  constructor() { }
+  constructor(private authService:UserService) { }
   auth:boolean=false;
   //STRING INTERPOLATION
   title = 'amazon';
@@ -34,6 +35,13 @@ export class NavComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  
+  this.authService.authSubject.subscribe(
+    data => 
+    {
+      console.log('auth inside nav component: ' + data);
+      this.auth = data;
+    }
+  );
   }
-
 }

@@ -17,7 +17,7 @@ import { LoginComponent } from './login/login.component';
 
 //Configure the routing path for the above imported components
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:'cards',component:CardsComponent},
   {path:'search',component:SearchComponent},
   {path:'fridge',component:RefridgeratorComponent},
