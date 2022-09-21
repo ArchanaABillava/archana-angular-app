@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 //accessing ngModel for 2-way binding
 import { FormsModule } from '@angular/forms';
@@ -25,7 +26,8 @@ import { DressComponent } from './dress/dress.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
-import { ProductDetailsComponent } from './productdetails/product-details.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+
 
 
 
@@ -52,7 +54,8 @@ import { ProductDetailsComponent } from './productdetails/product-details.compon
     LoginComponent,
     RegisterComponent,
     ContactComponent,
-    ProductDetailsComponent,
+    ProductdetailsComponent,
+    
     
     
     
@@ -61,7 +64,9 @@ import { ProductDetailsComponent } from './productdetails/product-details.compon
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

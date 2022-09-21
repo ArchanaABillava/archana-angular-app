@@ -14,41 +14,45 @@
             <!--SPA - Partial Rendering - routerLink-->
             <a class="nav-link active" aria-current="page" routerLink="" >Home</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="register" >Login/Register</a>
+          </li>
           
           <li class="nav-item">
-            <a class="nav-link" routerLink="cards">Products</a>
+            <a class="nav-link" routerLink="cards" >Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="amazondeals">Deals</a>
+            <a class="nav-link" routerLink="amazondeals" >Deals</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="productDetails">Product Details</a>
+            <a class="nav-link" routerLink="products" >Product Details</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" routerLink="register">Register</a>
           </li> -->
           
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown" *ngIf="auth">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Category
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="dress">Dress</a></li>
-              <li><a class="dropdown-item" routerLink="fridge">Home Appliances</a></li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+              <li><a class="dropdown-item" routerLink="dress" >Dress</a></li>
+              <li><a class="dropdown-item" routerLink="fridge" >Home Appliances</a></li>
               <!-- <li><a class="dropdown-item" routerLink="washingmachine">Electronic Gadgets</a></li> -->
-              <li><a class="dropdown-item" routerLink="microoven">Cosmetics</a></li>
+              <li><a class="dropdown-item" routerLink="microoven" >Cosmetics</a></li>
               
               
               <!-- <li><hr class="dropdown-divider"></li> -->
-              <li><a class="dropdown-item" href="#">Electronic Gadgets</a></li>
+              <li><a class="dropdown-item" href="#" >Electronic Gadgets</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color:red;">Happy Shopping</a>
           </li>
         </ul>
-        <button style="background-color:rgb(126, 190, 246);border-radius:10px;width: 200px;height: 50px;" routerLink="register">Register</button>
-        
+        <button style="background-color:rgb(126, 190, 246);border-radius:10px;width: 200px;height: 50px;" routerLink="contact">Contact us</button>
+        &nbsp;&nbsp;&nbsp;
+        <button style="background-color:rgb(126, 190, 246);border-radius:10px;width: 200px;height: 50px;" routerLink="login">Logout </button>
       </div>
 
       
@@ -57,7 +61,7 @@
   <form class="d-flex">
     <input type="text" #productname placeholder="Enter product name" style="border-radius:10px;">&nbsp;
     <!--EVENT BINDING-->
-    <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Search</button>
+    <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;" *ngIf="auth">Search</button>
     
     <!--Access the Search Component-->
     <br>
@@ -67,6 +71,8 @@
     <!--@Input(product) in search component is going to receive the value from productentered property from nav component-->
     &nbsp;&nbsp;&nbsp;
     <app-search [product]="productentered"></app-search>
+    &nbsp;&nbsp;&nbsp;
+    <!-- <a class="btn btn-outline-warning" type="submit" style="border-radius:10px;" routerLink="login" >Logout</a> -->
   </form>
   <br>
   <br>
