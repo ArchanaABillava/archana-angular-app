@@ -22,8 +22,19 @@
                
                 Price: {{product.price | currency:'INR'}}
                 <br>
-                <!-- <app-counter></app-counter> -->
-                <button style="background-color: rgb(158, 158, 253);margin-bottom:10px;border-radius:8px;margin-top: 10px;">Buy Now</button>
+                <br>
+
+                <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;" min="1" max="25">
+                Quantity
+                <br>
+                
+                <button class="btn btn-dark m-3" (click)="addToCart(product)" style="width:150px;border-radius:10px;">Add to Cart</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button style="background-color: black;color:white;width:150px;border-radius:10px;height: 36px;" href="https://rzp.io/i/J7OJXSP9KE" >Buy Now</button>
+                </div>
             </div>
         </div>
-    </div>
+
+                <!-- <button style="background-color: rgb(158, 158, 253);margin-bottom:10px;border-radius:8px;margin-top: 10px;">Buy Now</button>
+            </div>
+        </div>
+    </div> -->

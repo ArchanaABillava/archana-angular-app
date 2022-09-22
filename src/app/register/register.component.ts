@@ -48,8 +48,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
-import { error } from '@angular/compiler/src/util';
-
+// import { error } from '@angular/compiler/src/util';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -85,11 +85,21 @@ export class RegisterComponent implements OnInit {
 
     this.http.post<any>(this.userurl, this.registerForm.value)
       .subscribe(res => {
-        alert("signUp Successful");
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        })
+    
+        Toast.fire({
+          icon: 'success',
+          title: 'Sign Up Successful'
+        })
         this.registerForm.reset();
         this.router.navigate(['login']);
       })
-
   }
 
 }

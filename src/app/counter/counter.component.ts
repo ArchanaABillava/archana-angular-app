@@ -12,7 +12,7 @@ export class CounterComponent implements OnInit {
   ngOnInit(): void {
   }
   count=1;
-
+  
   //Receive the CounterValue from Counterchild
 
   receiveValue($event:number){

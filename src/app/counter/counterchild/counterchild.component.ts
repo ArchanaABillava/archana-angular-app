@@ -1,4 +1,4 @@
-import { Component, OnInit , Output ,EventEmitter} from '@angular/core';
+import { Component, OnInit , Output ,EventEmitter, Input} from '@angular/core';
 
 @Component({
   selector: 'app-counterchild',
@@ -7,20 +7,43 @@ import { Component, OnInit , Output ,EventEmitter} from '@angular/core';
 })
 export class CounterchildComponent implements OnInit {
 
+@Input() counterValue: number=1;
 //counter property
-counterValue=1;
+
 countLessThanOne=true;
 countMore=true;
 
-@Output() countEmitter=new EventEmitter();
+@Output() countEmitter = new EventEmitter();
+  @Output() quantityEmitter = new EventEmitter();
+  PostData() {
+    this.countEmitter.emit(this.counterValue);
+    this.quantityEmitter.emit(this.counterValue);
+  }
 
-PostValue(){
-  this.countEmitter.emit(this.counterValue);
-}
+
+// PostValue(){
+//   this.countEmitter.emit(this.counterValue);
+// }
  
 
 
-@Output() counterEmitter = new EventEmitter();
+// @Output() counterEmitter = new EventEmitter();
+decrement() {
+  if (this.counterValue == 1) {
+    this.countLessThanOne = false;
+  }
+  else {
+    this.countLessThanOne = true;
+    this.counterValue--;
+  }
+  this.PostData();
+}
+
+increment() {
+  this.counterValue++;
+  this.countLessThanOne = true;
+  this.PostData();
+}
 
   constructor() { }
 
@@ -28,34 +51,34 @@ PostValue(){
   }
 
 
-  //increment and decrement
-  decrement(){
-    if(this.counterValue==1)
-    {
-      this.countLessThanOne=false;
-      this.countMore=true;
-    }
-    else{
-      this.countLessThanOne=true;
-      this.countMore=true;
-      this.counterValue--;
-    }
-    this.PostValue();
-  }
+  // //increment and decrement
+  // decrement(){
+  //   if(this.counterValue==1)
+  //   {
+  //     this.countLessThanOne=false;
+  //     this.countMore=true;
+  //   }
+  //   else{
+  //     this.countLessThanOne=true;
+  //     this.countMore=true;
+  //     this.counterValue--;
+  //   }
+  //   this.PostValue();
+  // }
 
-  increment()
-  {
-    if(this.counterValue==15)
-    {
-      this.countMore=false;
-      this.countLessThanOne=true;
-    }
-    else{
-      this.countMore=true;
-      this.countLessThanOne=true;
-      this.counterValue++;
-    }
-    this.PostValue();
+  // increment()
+  // {
+  //   if(this.counterValue==15)
+  //   {
+  //     this.countMore=false;
+  //     this.countLessThanOne=true;
+  //   }
+  //   else{
+  //     this.countMore=true;
+  //     this.countLessThanOne=true;
+  //     this.counterValue++;
+  //   }
+  //   this.PostValue();
     
-  }
+  // }
 }

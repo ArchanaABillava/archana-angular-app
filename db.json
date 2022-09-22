@@ -8,9 +8,6 @@
       "img": "https://th.bing.com/th/id/OIP.6fUrfdYdaP2E2FMAwbmviQHaHa?pid=ImgDet&rs=1"
     },
     {
-      "id": 5
-    },
-    {
       "id": 6,
       "pname": "Sony TV",
       "pdescription": "Sony Bravia LED TV - 65 inch",
@@ -39,9 +36,6 @@
       "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS-jFitvGokxdqqClUXuZNSebA0vg2fnQxLUP31KC-UHfNPACHmiuH13qmJ_t2oJgVRU5nO4xaLZdcuw8UZk9-0jNR9Ay4EPy4TTms2bCQj&usqp=CAE"
     },
     {
-      "id": 10
-    },
-    {
       "id": 11,
       "pname": "Croma",
       "pdescription": "Croma - Double Door Convertible",
@@ -61,9 +55,6 @@
       "pdescription": "Samsung - Top Loading",
       "price": 10000,
       "img": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTfIENDuauv7ZFXGNRSQuVdIdyef-AJQ-tHSP4P5ahKNe7_eDc7WXcITgD0kXRnlbdHpBFSnKfeETvTuKUzMCURW_Ln2WvoUnPXoqw70I8&usqp=CAE"
-    },
-    {
-      "id": 14
     },
     {
       "id": 15,
@@ -99,18 +90,6 @@
       "pdescription": "Kids frock for age between 4 to 6yrs old",
       "price": "950",
       "img": "https://i.pinimg.com/originals/45/0f/9a/450f9a23a44d8527da05377795006fa2.jpg"
-    },
-    {
-      "id": 20
-    },
-    {
-      "id": 21
-    },
-    {
-      "id": 22
-    },
-    {
-      "id": 23
     }
   ],
   "users": [

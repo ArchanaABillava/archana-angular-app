@@ -51,7 +51,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { UserService } from '../user.service';
-
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -86,15 +86,50 @@ get f() { return this.loginForm.controls; }
       const user=res.find((a:any)=>{
         return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
       });
-      if(user){
-        alert("login successful!!");
-        this.loginForm.reset();
-        this.router.navigate([''])
-        this.userService.validateAuth(true);
-      }else{
-        alert("user not found !!");       
-        this.userService.validateAuth(false);
-      }
-    })
+    //   if(user){
+    //     alert("login successful!!");
+    //     this.loginForm.reset();
+    //     this.router.navigate([''])
+    //     this.userService.validateAuth(true);
+    //   }else{
+    //     alert("user not found !!");       
+    //     this.userService.validateAuth(false);
+    //   }
+    // })
+  
+    if(user){
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+      })
+  
+      Toast.fire({
+        icon: 'success',
+        title: 'Login Successful'
+      })
+      this.loginForm.reset();
+      this.router.navigate(['home'])
+      this.userService.validateAuth(true);
+    }else{
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+      })
+  
+      Toast.fire({
+        icon: 'error',
+        title: 'User not found'
+      })       
+      this.userService.validateAuth(false);
+    }
+  })
+
   }
+
 }

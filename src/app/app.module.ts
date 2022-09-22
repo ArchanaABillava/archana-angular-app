@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 //accessing ngModel for 2-way binding
 import { FormsModule } from '@angular/forms';
@@ -27,6 +27,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { CartitemComponent } from './cartitem/cartitem.component';
 
 
 
@@ -55,6 +56,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     RegisterComponent,
     ContactComponent,
     ProductdetailsComponent,
+    CartitemComponent,
     
     
     

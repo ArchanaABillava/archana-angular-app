@@ -13,7 +13,8 @@ import { DressComponent } from './dress/dress.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { LoginComponent } from './login/login.component';
-
+import { CartitemComponent } from './cartitem/cartitem.component';
+import { DealsComponent } from './deals/deals.component';
 
 //Configure the routing path for the above imported components
 const routes: Routes = [
@@ -28,7 +29,9 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'contact',component:ContactComponent},
   {path:'products',component:ProductdetailsComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'cartitem',component:CartitemComponent},
+  {path:'deals',component:DealsComponent}
 
 ];
 
