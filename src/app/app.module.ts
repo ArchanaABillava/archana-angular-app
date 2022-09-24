@@ -27,7 +27,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
-import { CartitemComponent } from './cartitem/cartitem.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
+
 
 
 
@@ -56,7 +57,9 @@ import { CartitemComponent } from './cartitem/cartitem.component';
     RegisterComponent,
     ContactComponent,
     ProductdetailsComponent,
-    CartitemComponent,
+    CartItemsComponent,
+    
+
     
     
     

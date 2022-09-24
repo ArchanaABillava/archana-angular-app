@@ -76,25 +76,37 @@ Retrieve the details from the form and render them using the json pipe
                 <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup</h2>
                 <br>
                 <div class="form-group">
+                    <input type="password" class="form-control" name="username" formControlName="username" placeholder="Enter username">
+                    <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['required']">Username is required</label>
+                    <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['minlength']">Username must be at least 6 characters</label>
+                    
+                </div>
+                <div class="form-group">
                     <input type="text" class="form-control" name="username" formControlName="username"
-                        placeholder="Enter Username">
+                        placeholder="Enter Username" required>
                     <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
                     </label>
                 </div>
                 <br>
                 <div class="form-group">
                     <input type="email" class="form-control" name="useremail" formControlName="useremail"
-                        placeholder="Enter email">
+                        placeholder="Enter email" required>
                     <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required</label>
                     <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must be a valid email address</label>
                 </div>
                 <br>
-                <div class="form-group">
+                <br>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
+                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
+                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
+                                </div>
+                <!-- <div class="form-group">
                     <input type="password" class="form-control" name="password" formControlName="password"
                         placeholder="Enter password">
                     <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['password']">Password is required</label>
                     <label class="error ng-binding" *ngIF="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
-                </div>
+                </div> -->
                 <br>
                 <div class="form-group">
                     <input type="text" class="form-control" name="mobile" formControlName="mobile"

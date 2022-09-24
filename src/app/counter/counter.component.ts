@@ -15,7 +15,7 @@ export class CounterComponent implements OnInit {
   
   //Receive the CounterValue from Counterchild
 
-  receiveValue($event:number){
+  receivecount($event:number){
     this.count=$event;
   }
 

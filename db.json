@@ -123,13 +123,35 @@
     },
     {
       "uername": "",
-      "useremail": "jyothi@gmail.com",
-      "password": "jyo",
-      "mobile": "9686905016",
+      "useremail": "madhurya@gmail.com",
+      "password": "123456",
+      "mobile": "9876543210",
       "id": 5
+    },
+    {
+      "uername": "",
+      "useremail": "madhurya@gmail.com",
+      "password": "mad2345",
+      "mobile": "9876543210",
+      "id": 6
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "cart": [
+    {
+      "pname": "Encyclopedia",
+      "pdescription": "Find the perfect encyclopedia book stock photo, image, vector, illustration or 360 image.",
+      "price": 750,
+      "img": "https://st.depositphotos.com/1741875/1237/i/600/depositphotos_12376816-stock-photo-stack-of-old-books.jpg",
+      "quantity": 2,
+      "id": 4
+    },
+    {
+      "pname": "Kids Building Blocks",
+      "pdescription": "Kids toys for age between 4 - 6 years old",
+      "price": 1000,
+      "img": "https://th.bing.com/th/id/OIP.Gd6ov_glKB2t4KzG4vYWbwHaHa?pid=ImgDet&rs=1",
+      "quantity": 2,
+      "id": 6
+    }
+  ]
 }

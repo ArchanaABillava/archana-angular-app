@@ -21,7 +21,8 @@ export class DealsComponent implements OnInit {
     quantity:1,
     totalPrice:1    
   }
-  quantity:number=1;
+  quantity:number=0;
+  value=1;
 
   addToCart(product:any){
     this.cart.pname=product.pname;
