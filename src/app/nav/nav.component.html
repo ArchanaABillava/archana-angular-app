@@ -12,10 +12,14 @@
           <li class="nav-item">
             <!--href - render the entire page-->
             <!--SPA - Partial Rendering - routerLink-->
-            <a class="nav-link active" aria-current="page"  routerLink="home" >Home</a>
+            <a class="nav-link active" aria-current="page"  routerLink="home"  >Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="register" *ngIf="!auth">Login/Register</a>
+            <a class="nav-link" routerLink="register" *ngIf="!auth">Register/Login
+</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="login" *ngIf="!auth">Admin Login</a>
           </li>
           
           <!-- <li class="nav-item">
@@ -25,7 +29,7 @@
             <a class="nav-link" routerLink="amazondeals" *ngIf="auth" >Deals</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="products" *ngIf="auth">Product Details</a>
+            <a class="nav-link" routerLink="products" *ngIf="admin">Product Details</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" routerLink="register">Register</a>
@@ -55,7 +59,7 @@
         </button> &nbsp;&nbsp;&nbsp;
         <button style="background-color:rgb(126, 190, 246);border-radius:10px;width: 200px;height: 50px;" routerLink="contact">Contact us</button>
         &nbsp;&nbsp;&nbsp;
-        <button style="background-color:rgb(126, 190, 246);border-radius:10px;width: 200px;height: 50px;" routerLink="login" *ngIf="auth">Logout </button>
+        <button style="background-color:rgb(126, 190, 246);border-radius:10px;width: 200px;height: 50px;" routerLink="login" *ngIf="auth || admin">Logout </button>
       </div>
 
       

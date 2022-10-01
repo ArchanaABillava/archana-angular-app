@@ -11,6 +11,7 @@ export class RefridgeratorComponent implements OnInit {
 
   ngOnInit(): void {
   }
+prod_array:string[]=['blue','shadow']
 fridge:any=(refridgerator as any).default;
 
 ProductDetail=false;
@@ -30,4 +31,13 @@ ProductDetail=false;
   }
   return content;
  }
+
 }
+class products
+{
+  blue:boolean=true;
+  shadow:boolean=true;
+  size:boolean=true;
+}
+
+

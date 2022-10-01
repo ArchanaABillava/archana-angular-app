@@ -28,6 +28,8 @@ import { RegisterComponent } from './register/register.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+
 
 
 
@@ -58,6 +60,8 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     ContactComponent,
     ProductdetailsComponent,
     CartItemsComponent,
+    FeedbackComponent,
+
     
 
     

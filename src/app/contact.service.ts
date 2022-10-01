@@ -14,21 +14,21 @@ export class ContactService {
       cdescription:'5th Floor, E Block ,Global Village,RVCE Post ,Main Road',
       caddress:'Bangalore',
       cphone:9876543210,
-      img:'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+      img:'https://i.gadgets360cdn.com/large/contacts_small_1502888603934.jpg'
     },
     {
       cname:'tietoevry',
       cdescription:'5th Floor, E Block ,Global Village,RVCE Post ,Main Road',
       caddress:'Pune',
       cphone:9876543210,
-      img:'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+      img:'https://i.gadgets360cdn.com/large/contacts_small_1502888603934.jpg'
     },
     {
       cname:'tietoevry',
       cdescription:'5th Floor, E Block ,Global Village,RVCE Post ,Main Road',
       caddress:'Mumbai',
       cphone:9876543210,
-      img:'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+      img:'https://i.gadgets360cdn.com/large/contacts_small_1502888603934.jpg'
     }
     
   ]

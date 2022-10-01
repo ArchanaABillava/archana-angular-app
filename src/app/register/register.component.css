@@ -19,8 +19,8 @@ form {
 }
 
 form:hover {
-    color: rgb(19, 8, 51);
-    background-color: rgb(63, 66, 245);
+    color: rgb(28, 12, 76);
+    background-color: rgb(176, 177, 252);
     transform:scale(1.1);
 
 }

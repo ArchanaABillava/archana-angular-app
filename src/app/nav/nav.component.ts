@@ -1,18 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , EventEmitter ,Output} from '@angular/core';
 
 // import { UserService } from '../user.service';
 import {UserService} from '../user.service';
 //Cart count
 import { CartService } from '../cart.service';
+import { AdminService } from '../admin.service';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  public searchTerm:string=''
    //Dependency injection
-  constructor(private authService:UserService , private cartSvc:CartService) { }
+  constructor(private authService:UserService ,private adminService:AdminService, private cartSvc:CartService) { }
   auth:boolean=false;
+  admin:boolean=false;
   //Add to cart
   cartCount:number=0;
   //STRING INTERPOLATION

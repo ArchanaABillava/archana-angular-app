@@ -28,22 +28,22 @@ countMore=true;
 
 
 // @Output() counterEmitter = new EventEmitter();
-decrement() {
-  if (this.counterValue == 1) {
-    this.countLessThanOne = false;
-  }
-  else {
-    this.countLessThanOne = true;
-    this.counterValue--;
-  }
-  this.PostData();
-}
+// decrement() {
+//   if (this.counterValue == 1) {
+//     this.countLessThanOne = false;
+//   }
+//   else {
+//     this.countLessThanOne = true;
+//     this.counterValue--;
+//   }
+//   this.PostData();
+// }
 
-increment() {
-  this.counterValue++;
-  this.countLessThanOne = true;
-  this.PostData();
-}
+// increment() {
+//   this.counterValue++;
+//   this.countLessThanOne = true;
+//   this.PostData();
+// }
 
   constructor() { }
 
@@ -51,34 +51,34 @@ increment() {
   }
 
 
-  // //increment and decrement
-  // decrement(){
-  //   if(this.counterValue==1)
-  //   {
-  //     this.countLessThanOne=false;
-  //     this.countMore=true;
-  //   }
-  //   else{
-  //     this.countLessThanOne=true;
-  //     this.countMore=true;
-  //     this.counterValue--;
-  //   }
-  //   this.PostValue();
-  // }
+  //increment and decrement
+  decrement(){
+    if(this.counterValue==1)
+    {
+      this.countLessThanOne=false;
+      this.countMore=true;
+    }
+    else{
+      this.countLessThanOne=true;
+      this.countMore=true;
+      this.counterValue--;
+    }
+    this.PostData();
+  }
 
-  // increment()
-  // {
-  //   if(this.counterValue==15)
-  //   {
-  //     this.countMore=false;
-  //     this.countLessThanOne=true;
-  //   }
-  //   else{
-  //     this.countMore=true;
-  //     this.countLessThanOne=true;
-  //     this.counterValue++;
-  //   }
-  //   this.PostValue();
+  increment()
+  {
+    if(this.counterValue==15)
+    {
+      this.countMore=false;
+      this.countLessThanOne=true;
+    }
+    else{
+      this.countMore=true;
+      this.countLessThanOne=true;
+      this.counterValue++;
+    }
+    this.PostData();
     
-  // }
+  }
 }
