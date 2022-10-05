@@ -29,6 +29,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -61,6 +62,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
     ProductdetailsComponent,
     CartItemsComponent,
     FeedbackComponent,
+    AdminComponent,
 
     
 

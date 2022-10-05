@@ -9,6 +9,7 @@ import { UserService } from './user.service';
 })
 export class AuthGuard implements CanActivate {
   isAuthenticated:boolean=false;
+  isadmin:boolean=false;
   //constructor of userservice
   constructor(
     private authService: UserService,
@@ -24,8 +25,14 @@ export class AuthGuard implements CanActivate {
           console.log('next subscribed value: ' + data);
           this.isAuthenticated = data;
         })
+        var isadmin= this.authService.authad.subscribe(
+          data => 
+          {
+            console.log('next subscribed value: ' + data);
+            this.isadmin = data;
+          })
  
-      if ( this.isAuthenticated==false) {
+      if ( this.isAuthenticated==false || this.isadmin==false) {
         console.log('inside false ' + this.isAuthenticated);
           this.router.navigate(['/login']);
           return false;

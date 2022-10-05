@@ -71,7 +71,7 @@ export class LoginComponent implements OnInit {
   
     ngOnInit(): void {
       this.userService.validateAuth(false);
-      this.adminService.validateAdmin(false); //data parameter in your userservice
+      //this.adminService.validateAdmin(false); //data parameter in your userservice
       this.loginForm = this.formBuilder.group({
         useremail: ['', [Validators.required, Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
         password: ['', [Validators.required, Validators.minLength(6)]]
@@ -87,15 +87,73 @@ export class LoginComponent implements OnInit {
         const user=res.find((a:any)=>{
           return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
         });
-        this.http.get<any>(this.adminapi).subscribe(res => {
-          const admin = res.find((a: any) => {
-            if(this.loginForm.value.useremail=="admin@gmail.com" && this.loginForm.value.password=="admin123"){
-              return true
-            }
-            else{
-              return false
-            }
-          });
+        if(this.loginForm.value.useremail=='admin@gmail.com' && this.loginForm.value.password=='admin@123'){
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+          })
+        // this.http.get<any>(this.adminapi).subscribe(res => {
+        //  const admin = res.find((a: any) => {
+        //     if(this.loginForm.value.useremail=="admin@gmail.com" && this.loginForm.value.password=="admin123"){
+        //       return true
+        //     }
+        //     else{
+        //       return false
+        //     }
+        //   });
+        // if(user){
+        //   const Toast = Swal.mixin({
+        //     toast: true,
+        //     position: 'top',
+        //     showConfirmButton: false,
+        //     timer: 3000,
+        //     timerProgressBar: true,
+        //   })
+      
+          Toast.fire({
+            icon: 'success',
+            title: 'Login Successful'
+          })
+          this.loginForm.reset();
+          this.router.navigate([''])
+          this.userService.validateAdmin(true);
+        }
+        else{
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 1000,
+            timerProgressBar:true
+          })
+  
+         //Toast.fire({
+        //     icon: 'success',
+        //     title: 'Login Successful!!!'
+        //   })
+        //   this.loginForm.reset();
+        //   this.router.navigate([''])
+        //   this.adminService.validateAdmin(true);
+        // }
+        // else{
+        //   const Toast = Swal.mixin({
+        //     toast: true,
+        //     position: 'top',
+        //     showConfirmButton: false,
+        //     timer: 3000,
+        //     timerProgressBar: true,
+        //   })
+      
+          Toast.fire({
+            icon: 'error',
+            title: 'User not found'
+          })       
+          this.userService.validateAuth(false);
+          
+        }
         if(user){
           const Toast = Swal.mixin({
             toast: true,
@@ -112,24 +170,7 @@ export class LoginComponent implements OnInit {
           this.loginForm.reset();
           this.router.navigate([''])
           this.userService.validateAuth(true);
-        }
-        else if(admin){
-          const Toast = Swal.mixin({
-            toast: true,
-            position: 'top',
-            showConfirmButton: false,
-            timer: 1000,
-          })
-  
-          Toast.fire({
-            icon: 'success',
-            title: 'Login Successful!!!'
-          })
-          this.loginForm.reset();
-          this.router.navigate([''])
-          this.adminService.validateAdmin(true);
-        }
-        else{
+        }else{
           const Toast = Swal.mixin({
             toast: true,
             position: 'top',
@@ -139,14 +180,13 @@ export class LoginComponent implements OnInit {
           })
       
           Toast.fire({
-            icon: 'error',
-            title: 'User not found'
+            icon: 'success',
+            title: 'Admin Login Successful'
           })       
           this.userService.validateAuth(false);
-          this.adminService.validateAdmin(false);
         }
       })
-    })
+      
     }
   }
   

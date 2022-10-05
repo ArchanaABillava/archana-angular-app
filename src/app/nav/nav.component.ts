@@ -51,6 +51,15 @@ export class NavComponent implements OnInit {
       this.auth = data;
     }
   );
+  this.authService.authad.subscribe(
+    data => 
+    {
+      console.log('auth inside nav component: ' + data);
+      this.admin = data;
+      console.log(this.admin);
+
+    }
+  );
   
   //Cart count
   this.cartSvc.getCartItems().subscribe(

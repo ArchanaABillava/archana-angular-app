@@ -16,7 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
 import { DealsComponent } from './deals/deals.component';
 import { FeedbackComponent } from './feedback/feedback.component';
-
+import { AdminComponent } from './admin/admin.component';
 
 //Configure the routing path for the above imported components
 const routes: Routes = [
@@ -34,7 +34,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'cartitem',component:CartItemsComponent},
   {path:'deals',component:DealsComponent},
-  {path:'feedback',component:FeedbackComponent}
+  {path:'feedback',component:FeedbackComponent},
+  {path:'admin',component:AdminComponent}
   
 
 ];

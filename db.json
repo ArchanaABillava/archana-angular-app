@@ -122,17 +122,6 @@
       "id": 6
     }
   ],
-  "admin": [
-    {
-      "username": "admin",
-      "useremail": "admin@gmail.com",
-      "password": "admin123",
-      "mobile": "9591617518",
-      "id": 1
-    }
-  ],
-    
-
   "cart": [
     {
       "pname": "Encyclopedia",
@@ -165,6 +154,16 @@
       "img": "https://st.depositphotos.com/1741875/1237/i/600/depositphotos_12376816-stock-photo-stack-of-old-books.jpg",
       "quantity": 2,
       "id": 8
+    }
+  ],
+  "Admin": [
+    {
+      "id": 1,
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9591617518"
+      
     }
   ]
 }
