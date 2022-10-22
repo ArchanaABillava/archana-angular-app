@@ -113,10 +113,10 @@ export class LoginComponent implements OnInit {
         //     timerProgressBar: true,
         //   })
       
-          Toast.fire({
-            icon: 'success',
-            title: 'Login Successful'
-          })
+          // Toast.fire({
+          //   icon: 'success',
+          //   title: 'Login Successful'
+          // })
           this.loginForm.reset();
           this.router.navigate([''])
           this.userService.validateAdmin(true);
@@ -165,7 +165,7 @@ export class LoginComponent implements OnInit {
       
           Toast.fire({
             icon: 'success',
-            title: 'Login Successful'
+            title: 'User Login Successful'
           })
           this.loginForm.reset();
           this.router.navigate([''])
@@ -183,7 +183,7 @@ export class LoginComponent implements OnInit {
             icon: 'success',
             title: 'Admin Login Successful'
           })       
-          this.userService.validateAuth(false);
+          this.userService.validateAuth(true);
         }
       })
       
